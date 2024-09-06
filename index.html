@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/80d724d44f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student at NIST University</p>
+                <h1>Hi, I'm <span>Subrata</span> Kumar Sahu<br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-------about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey everyone, I'm Subrata Kumar Sahu<br>
+                        a B.Tech student majoring in Computer Science and Engineering at NIST University.<br> 
+                        I'm passionate about becoming an Artificial Intelligence Engineer.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C, C++, Java, Python</li>
+                            <li><span>Database</span><br>MySQL, MongoDB, Oracle</li>
+                            <li><span>Web Designing/Development</span><br>HTML, CSS, Javascript</li>
+                            <li><span>AI/ML</span><br>Pytorch, Tensorflow, keres, YOLO, RASA</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Java Developer</span><br>Java, JavaFX</li>
+                            <li><span>Cloud Computing</span><br>Google Cloud, AWS, IBM</li>
+                            <li><span>Data Analysis</span><br>PowerBI</li>
+                            <li><span>Web Development</span><br>Portfolio Website</li>
+                            <li><span>Machine Learning</span><br>Hands-on Projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in CSE</span><br>NIST University</li>
+                            <li><span>Intermediate</span><br>Sankalp Senior Secondary School</li>
+                            <li><span>Schooling</span><br>ST. Xavier High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------profile------>
+    <div id="profile">
+        <div class="container">
+            <h1 class="sub-title">Profile</h1>
+            <div class="profile-list">
+                <div>
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h2>Project</h2>
+                    <p>Here all the projects I have worked till now.</p>
+                    <a href="https://github.com/subratasahu21?tab=repositories" target="_blank">Click Here to learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope-circle-check"></i>
+                    <h2>Internship</h2>
+                    <p>Internships are very much important to all of us.</p>
+                    <a href="https://drive.google.com/file/d/1BhDvVYHT8vXHmxT4RzR65woIovUnXzPG/view?usp=drive_link">Click Here to learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-certificate"></i>
+                    <h2>Certificates</h2>
+                    <p>Here all my certificates I have achived.</p>
+                    <a href="https://drive.google.com/drive/folders/1bZ9CgmiKjKnuzG_7-JXOQSzbAlgNP1Vp?usp=sharing">Click Here to learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------Portfolio------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>I have gained proficiency in HTML, CSS, and JavaScript</p>
+                        <a href="https://github.com/subratasahu21/Portfolio-Site"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>Object Detection and Tracking Model</h3>
+                        <p>I have utilized the YOLOV7 model with a custom dataset to detect and track specified objects</p>
+                        <a href="https://drive.google.com/drive/folders/1-2INGN2udI9b-PTTqYLY2q8r6Xosg_8A?usp=sharing" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.jpg">
+                    <div class="layer">
+                        <h3>Chatbot using RASA</h3>
+                        <p>We have developed a functional chatbot using the RASA framework, designed specifically for E-Commerce data</p>
+                        <a href="https://drive.google.com/drive/folders/1xF3TZ_wgp3f8LrAM9EyuDWVzW9_SDehx?usp=sharing" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/subratasahu21?tab=repositories" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------contact------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">
+                        Contact Me
+                    </h1>
+                    <p><i class="fa-solid fa-at"></i> subratsahu737@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 99373674229</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/iamsubratakumarsahu/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/subrata-kumar-sahu-55a262253/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/Subratasahu737"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="Images/Doc.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Subrata Kumar Sahu. Personal Portfolio Website <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxUn0S7gSXSvL2XVGdBmf7rHvajSPYRs8LBYueWMku9FHOpbZhgtbcyNpn3Hvp10pBP/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
